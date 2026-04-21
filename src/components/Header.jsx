@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass h-16 flex items-center px-4 md:px-8 justify-between">
       <div className="flex items-center h-10">
-        <img src="/logo.png" alt="Miami Epoxy Resin" className="h-full w-auto object-contain" />
+        <img src="/images/logo-miami-epoxy-resin.png" alt="Miami Epoxy Resin" className="h-full w-auto object-contain" />
       </div>
       
       <a 

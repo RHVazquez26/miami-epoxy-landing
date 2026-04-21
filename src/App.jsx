@@ -17,7 +17,7 @@ function App() {
         <footer className="py-12 px-4 md:px-8 bg-gray-900 text-white text-center">
           <div className="max-w-4xl mx-auto">
             <div className="flex justify-center mb-6">
-              <img src="/images/logo-miami-epoxy-resin.png" alt="Miami Epoxy Resin" className="h-12 w-auto object-contain brightness-0 invert" />
+              <img src="/images/logo-miami-epoxy-resin.png" alt="Miami Epoxy Resin" className="h-12 w-auto object-contain" />
             </div>
             <p className="text-gray-400 mb-8 max-w-md mx-auto">
               Professional epoxy flooring solutions for residential and commercial spaces in Miami, FL. High quality, lifetime durability.

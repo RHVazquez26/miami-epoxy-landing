@@ -3,6 +3,8 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Gallery from './components/Gallery';
 import ServiceAreas from './components/ServiceAreas';
+import Reviews from './components/Reviews';
+import FAQ from './components/FAQ';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <Hero />
         <Gallery />
         <ServiceAreas />
+        <Reviews />
+        <FAQ />
         
         {/* Simple Footer */}
         <footer className="py-12 px-4 md:px-8 bg-gray-900 text-white text-center">

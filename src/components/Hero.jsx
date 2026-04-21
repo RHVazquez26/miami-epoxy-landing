@@ -34,15 +34,15 @@ const Hero = () => {
           </a>
         </div>
         
-        <div className="mt-12 flex justify-center gap-8 text-gray-500 font-medium overflow-x-auto pb-2">
-          <div className="flex items-center gap-2 whitespace-nowrap">
-            <span className="text-secondary">✓</span> 100% Satisfaction
+        <div className="mt-12 flex flex-wrap justify-center gap-x-8 gap-y-4 text-gray-500 font-medium px-4">
+          <div className="flex items-center gap-2">
+            <span className="text-secondary font-bold">✓</span> 100% Satisfaction
           </div>
-          <div className="flex items-center gap-2 whitespace-nowrap">
-            <span className="text-secondary">✓</span> Miami Owned & Operated
+          <div className="flex items-center gap-2">
+            <span className="text-secondary font-bold">✓</span> Miami Owned & Operated
           </div>
-          <div className="flex items-center gap-2 whitespace-nowrap">
-            <span className="text-secondary">✓</span> Lifetime Durability
+          <div className="flex items-center gap-2">
+            <span className="text-secondary font-bold">✓</span> Lifetime Durability
           </div>
         </div>
       </div>

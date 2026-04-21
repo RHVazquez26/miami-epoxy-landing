@@ -3,11 +3,8 @@ import React from 'react';
 const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass h-16 flex items-center px-4 md:px-8 justify-between">
-      <div className="flex items-center gap-2">
-        <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-          <span className="text-white font-bold text-xl">M</span>
-        </div>
-        <span className="font-bold text-lg md:text-xl tracking-tight text-gray-900">Miami Epoxy Resin</span>
+      <div className="flex items-center h-10">
+        <img src="/logo.png" alt="Miami Epoxy Resin" className="h-full w-auto object-contain" />
       </div>
       
       <a 

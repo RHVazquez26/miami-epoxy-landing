@@ -1,4 +1,5 @@
 import React from 'react';
+import { trackContactConversion } from '../utils/gtag';
 
 const Hero = () => {
   return (
@@ -17,6 +18,7 @@ const Hero = () => {
             href="https://wa.me/13054620143?text=I'd like to get a free estimate for an epoxy project."
             target="_blank"
             rel="noopener noreferrer"
+            onClick={trackContactConversion}
             className="w-full md:w-auto bg-whatsapp text-white px-8 py-5 rounded-2xl font-bold text-xl btn-hover shadow-xl flex items-center justify-center gap-3"
           >
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" className="w-6 h-6 invert" />
@@ -25,6 +27,7 @@ const Hero = () => {
           
           <a 
             href="tel:3054620143"
+            onClick={trackContactConversion}
             className="w-full md:w-auto bg-call text-white px-8 py-5 rounded-2xl font-bold text-xl btn-hover shadow-xl flex items-center justify-center gap-3"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">

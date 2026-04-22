@@ -1,4 +1,5 @@
 import React from 'react';
+import { trackContactConversion } from '../utils/gtag';
 
 const Header = () => {
   return (
@@ -9,6 +10,7 @@ const Header = () => {
       
       <a 
         href="tel:3054620143"
+        onClick={trackContactConversion}
         className="bg-call text-white px-5 py-2 rounded-full font-bold text-sm md:text-base btn-hover shadow-lg flex items-center gap-2"
       >
         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">

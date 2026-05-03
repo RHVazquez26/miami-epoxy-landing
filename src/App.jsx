@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { trackContactConversion } from './utils/gtag';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Gallery from './components/Gallery';
-import ServiceAreas from './components/ServiceAreas';
-import Reviews from './components/Reviews';
-import FAQ from './components/FAQ';
+
+const Gallery = React.lazy(() => import('./components/Gallery'));
+const ServiceAreas = React.lazy(() => import('./components/ServiceAreas'));
+const Reviews = React.lazy(() => import('./components/Reviews'));
+const FAQ = React.lazy(() => import('./components/FAQ'));
 
 function App() {
   return (
@@ -13,16 +14,19 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <Gallery />
-        <ServiceAreas />
-        <Reviews />
-        <FAQ />
+        
+        <Suspense fallback={<div className="py-20 text-center text-gray-500">Loading...</div>}>
+          <Gallery />
+          <ServiceAreas />
+          <Reviews />
+          <FAQ />
+        </Suspense>
         
         {/* Simple Footer */}
         <footer className="py-12 px-4 md:px-8 bg-gray-900 text-white text-center">
           <div className="max-w-4xl mx-auto">
             <div className="flex justify-center mb-6">
-              <img src="/images/logo-miami-epoxy-resin.png" alt="Miami Epoxy Resin" className="h-12 w-auto object-contain" />
+              <img src="/images/logo-miami-epoxy-resin.png" alt="Miami Epoxy Resin" className="h-12 w-auto object-contain" loading="lazy" />
             </div>
             <p className="text-gray-400 mb-8 max-w-md mx-auto">
               Professional epoxy flooring solutions for residential and commercial spaces in Miami, FL. High quality, lifetime durability.

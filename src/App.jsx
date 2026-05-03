@@ -8,6 +8,13 @@ import Reviews from './components/Reviews';
 import FAQ from './components/FAQ';
 
 function App() {
+  React.useEffect(() => {
+    const placeholder = document.getElementById('lcp-placeholder');
+    if (placeholder) {
+      placeholder.style.display = 'none';
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-white">
       <Header />

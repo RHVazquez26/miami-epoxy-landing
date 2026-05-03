@@ -12,7 +12,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="min-h-screen bg-white">
+        <main>
+          <section class="pt-24 pb-12 px-4 md:px-8 text-center bg-gradient-to-b from-gray-50 to-white">
+            <div class="max-w-4xl mx-auto">
+              <!-- Placeholder for text and buttons to prevent massive layout shift -->
+              <div style="height: 300px;"></div>
+              
+              <div class="mt-12 max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl">
+                <img 
+                  src="/images/project1.webp"
+                  srcset="/images/project1-mobile.webp 800w, /images/project1.webp 1024w"
+                  sizes="(max-width: 768px) 100vw, 1024px"
+                  alt="Miami Premium Epoxy Resin Floor" 
+                  class="w-full h-auto object-cover aspect-video"
+                  fetchpriority="high"
+                  decoding="sync"
+                  width="1024"
+                  height="576"
+                />
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
     <script type="module" defer src="/src/main.jsx"></script>
     
     <!-- Google Ads Global Site Tag (gtag.js) - AW-17495438717 -->

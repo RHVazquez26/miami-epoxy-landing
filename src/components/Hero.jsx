@@ -46,6 +46,7 @@ const Hero = () => {
             className="w-full h-auto object-cover aspect-video"
             loading="eager"
             fetchpriority="high"
+            decoding="sync"
             width="1024"
             height="576"
           />

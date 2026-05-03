@@ -1,12 +1,12 @@
 import React from 'react';
 
 const projects = [
-  { id: 1, src: '/images/project1.png', title: 'Metallic Epoxy Finish' },
-  { id: 2, src: '/images/project2.png', title: 'Flake Garage Floor' },
-  { id: 3, src: '/images/project3.png', title: 'Commercial Kitchen' },
-  { id: 4, src: '/images/project4.png', title: 'Artistic Office Space' },
-  { id: 5, src: '/images/project5.png', title: 'Terrazzo Detail' },
-  { id: 6, src: '/images/project6.png', title: 'Modern Patio Finish' },
+  { id: 1, src: '/images/project1.webp', title: 'Metallic Epoxy Finish' },
+  { id: 2, src: '/images/project2.webp', title: 'Flake Garage Floor' },
+  { id: 3, src: '/images/project3.webp', title: 'Commercial Kitchen' },
+  { id: 4, src: '/images/project4.webp', title: 'Artistic Office Space' },
+  { id: 5, src: '/images/project5.webp', title: 'Terrazzo Detail' },
+  { id: 6, src: '/images/project6.webp', title: 'Modern Patio Finish' },
 ];
 
 const Gallery = () => {
@@ -26,6 +26,8 @@ const Gallery = () => {
                 alt={project.title}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 loading="lazy"
+                width="1024"
+                height="1024"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                 <p className="text-white font-bold text-lg">{project.title}</p>

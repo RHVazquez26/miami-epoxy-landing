@@ -37,6 +37,18 @@ const Hero = () => {
           </a>
         </div>
         
+        <div className="mt-12 max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl">
+          <img 
+            src="/images/project1.webp" 
+            alt="Miami Premium Epoxy Resin Floor" 
+            className="w-full h-auto object-cover aspect-video"
+            loading="eager"
+            fetchpriority="high"
+            width="1024"
+            height="576"
+          />
+        </div>
+
         <div className="mt-12 flex flex-col sm:flex-row flex-wrap justify-center items-center gap-x-8 gap-y-4 text-gray-500 font-medium px-4">
           <div className="flex items-center gap-2 whitespace-nowrap">
             <span className="text-secondary font-bold">✓</span> 100% Satisfaction

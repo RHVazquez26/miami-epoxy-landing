@@ -39,7 +39,9 @@ const Hero = () => {
         
         <div className="mt-12 max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl">
           <img 
-            src="/images/project1.webp" 
+            src="/images/project1.webp"
+            srcSet="/images/project1-mobile.webp 800w, /images/project1.webp 1024w"
+            sizes="(max-width: 768px) 100vw, 1024px"
             alt="Miami Premium Epoxy Resin Floor" 
             className="w-full h-auto object-cover aspect-video"
             loading="eager"

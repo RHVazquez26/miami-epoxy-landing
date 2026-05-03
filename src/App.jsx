@@ -1,12 +1,11 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import { trackContactConversion } from './utils/gtag';
 import Header from './components/Header';
 import Hero from './components/Hero';
-
-const Gallery = React.lazy(() => import('./components/Gallery'));
-const ServiceAreas = React.lazy(() => import('./components/ServiceAreas'));
-const Reviews = React.lazy(() => import('./components/Reviews'));
-const FAQ = React.lazy(() => import('./components/FAQ'));
+import Gallery from './components/Gallery';
+import ServiceAreas from './components/ServiceAreas';
+import Reviews from './components/Reviews';
+import FAQ from './components/FAQ';
 
 function App() {
   return (
@@ -14,13 +13,10 @@ function App() {
       <Header />
       <main>
         <Hero />
-        
-        <Suspense fallback={<div className="py-20 text-center text-gray-500">Loading...</div>}>
-          <Gallery />
-          <ServiceAreas />
-          <Reviews />
-          <FAQ />
-        </Suspense>
+        <Gallery />
+        <ServiceAreas />
+        <Reviews />
+        <FAQ />
         
         {/* Simple Footer */}
         <footer className="pt-12 pb-28 md:pb-12 px-4 md:px-8 bg-gray-900 text-white text-center">
